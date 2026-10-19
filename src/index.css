@@ -1,3 +1,14 @@
+:root {
+    --main-color: #1c1612;
+    --heading-text-color: #f3e5c8;
+    --nav-text-color: #e5b96f;
+}
+
+html, body {
+    margin: 0;
+}
+
 body {
-  font-family: Cambria, 'Times New Roman', serif;
+    font-family: Cambria, 'Times New Roman', serif;
+    background-color: var(--main-color);
 }

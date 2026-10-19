@@ -1,0 +1,23 @@
+.main-header {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.main-header .site-logo {
+    text-decoration: none;
+}
+
+.main-header h1 {
+    color: var(--heading-text-color);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1001px) {
+    .main-header {
+        display: flex;
+        align-items: center;
+        padding: 15px 60px;
+        text-align: left;
+    }
+}
