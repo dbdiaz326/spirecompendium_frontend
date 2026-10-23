@@ -16,6 +16,7 @@ import DefectStrike from "./pages/defectstrike/DefectStrike";
 import Watcher from "./pages/watcher/Watcher";
 import PureWater from "./pages/purewater/PureWater";
 import WatcherStrike from "./pages/watcherstrike/WatcherStrike";
+import Contact from "./pages/contact/Contact";
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                     <Route path="ironclad" element={<Ironclad />} />
                     <Route path="burning-blood" element={<BurningBlood />} />
                     <Route path="ironclad-strike" element={<IroncladStrike />} />
+                    <Route path="contact" element={<Contact />} />
                 </Route>
 
                 <Route element={<Layout theme="silent-theme" />}>
