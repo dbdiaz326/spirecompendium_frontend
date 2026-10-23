@@ -1,0 +1,29 @@
+.steps-card {
+    background-color: var(--steps-card-background);
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 150px;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.steps-number {
+    color: var(--accent-text-color);
+    font-size: 30px;
+    margin: 0 0 15px;
+}
+
+.steps-card-title {
+    color: var(--heading-text-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+.steps-card-text {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+}

@@ -1,7 +1,15 @@
 :root {
     --main-color: #1c1612;
     --heading-text-color: #f3e5c8;
+    --text-color: #d7c6a6;
+    --accent-text-color: #d98b52;
     --nav-text-color: #e5b96f;
+    --divider-color: #e8ad5c;
+    --hero-fade-color: #32100d;
+    --hero-card-background: #452b24;
+    --steps-background-left: #4d211b;
+    --steps-background-right: #5e3427;
+    --steps-card-background: #241a16;
 }
 
 html, body {
@@ -11,4 +19,18 @@ html, body {
 body {
     font-family: Cambria, 'Times New Roman', serif;
     background-color: var(--main-color);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+img {
+    max-width: 100%;
 }

@@ -1,14 +1,16 @@
 import "./Header.css";
 import Navigation from "../navigation/Navigation";
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
         <header className="main-header">
-            <a className="site-logo" href="#">
+            <NavLink className="site-logo" to="/">
                 <h1>The Spire Character<br />Compendium</h1>
-            </a>
+            </NavLink>
             <Navigation />
         </header>
     );
 };
+
 export default Header;
