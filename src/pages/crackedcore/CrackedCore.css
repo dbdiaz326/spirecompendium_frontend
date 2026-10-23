@@ -1,0 +1,136 @@
+#cracked-core {
+    --heading-text-color: #dbf5ff;
+    --text-color: #99ccf0;
+    --accent-text-color: #59c7ff;
+    background-color: #060e1b;
+}
+
+#cracked-core .detail-screen-section {
+    border: 4px solid var(--divider-color);
+    padding: 50px 20px;
+}
+
+#cracked-core .detail-screen-subheading {
+    color: var(--accent-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#cracked-core .detail-screen-info-section {
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+#cracked-core .detail-screen-image-section {
+    background-color: #0e2e52;
+    border: 1px solid var(--divider-color);
+    border-radius: 18px;
+    box-sizing: border-box;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cracked-core .detail-screen-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+#cracked-core .detail-screen-text-section {
+    text-align: center;
+    margin-top: 45px;
+}
+
+#cracked-core .detail-screen-title {
+    color: var(--heading-text-color);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#cracked-core .detail-screen-type {
+    color: var(--accent-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0 0 35px;
+}
+
+#cracked-core .detail-screen-heading {
+    color: var(--heading-text-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#cracked-core .detail-screen-effect {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 50px;
+}
+
+#cracked-core .detail-screen-description {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 50px;
+}
+
+#cracked-core .detail-screen-back-link {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #0e213b;
+    color: var(--heading-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 60px;
+    border: 2px solid var(--accent-text-color);
+    border-radius: 8px;
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1001px) {
+    #cracked-core .detail-screen-section {
+        padding: 70px 40px;
+    }
+
+    #cracked-core .detail-screen-subheading {
+        text-align: left;
+    }
+
+    #cracked-core .detail-screen-info-section {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        margin-top: 70px;
+    }
+
+    #cracked-core .detail-screen-image-section {
+        flex: 1;
+        height: 450px;
+    }
+
+    #cracked-core .detail-screen-text-section {
+        flex: 1;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #cracked-core .detail-screen-title {
+        font-size: 50px;
+    }
+
+    #cracked-core .detail-screen-effect {
+        font-size: 24px;
+    }
+}

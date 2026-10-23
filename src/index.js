@@ -10,6 +10,9 @@ import IroncladStrike from "./pages/ironcladstrike/IroncladStrike";
 import Silent from "./pages/silent/Silent";
 import RingOfTheSnake from "./pages/ringofthesnake/RingOfTheSnake";
 import SilentStrike from "./pages/silentstrike/SilentStrike";
+import Defect from "./pages/defect/Defect";
+import CrackedCore from "./pages/crackedcore/CrackedCore";
+import DefectStrike from "./pages/defectstrike/DefectStrike";
 
 const App = () => {
     return (
@@ -26,6 +29,12 @@ const App = () => {
                     <Route path="silent" element={<Silent />} />
                     <Route path="ring-of-the-snake" element={<RingOfTheSnake />} />
                     <Route path="silent-strike" element={<SilentStrike />} />
+                </Route>
+
+                <Route element={<Layout theme="defect-theme" />}>
+                    <Route path="defect" element={<Defect />} />
+                    <Route path="cracked-core" element={<CrackedCore />} />
+                    <Route path="defect-strike" element={<DefectStrike />} />
                 </Route>
             </Routes>
         </HashRouter>

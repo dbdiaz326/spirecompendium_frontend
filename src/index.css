@@ -51,3 +51,20 @@ img {
 .silent-theme #main-footer {
     background-color: #172a13;
 }
+
+/* Defect Theme */
+.defect-theme {
+    --heading-text-color: #dbf5ff;
+    --text-color: #99ccf0;
+    --accent-text-color: #59c7ff;
+    --nav-text-color: #99ccf0;
+    background-color: #060e1b;
+}
+
+.defect-theme .main-header {
+    background-color: #091a33;
+}
+
+.defect-theme #main-footer {
+    background-color: #0e213b;
+}
