@@ -34,3 +34,20 @@ body {
 img {
     max-width: 100%;
 }
+
+/* Silent Theme */
+.silent-theme {
+    --heading-text-color: #e1f5b8;
+    --text-color: #99c2ad;
+    --accent-text-color: #a3db4d;
+    --nav-text-color: #99c2ad;
+    background-color: #0c170e;
+}
+
+.silent-theme .main-header {
+    background-color: #11200f;
+}
+
+.silent-theme #main-footer {
+    background-color: #172a13;
+}
