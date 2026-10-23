@@ -1,0 +1,131 @@
+#burning-blood {
+    background-color: #15110e;
+}
+
+#burning-blood .detail-screen-section {
+    border: 4px solid var(--divider-color);
+    padding: 50px 20px;
+}
+
+#burning-blood .detail-screen-subheading {
+    color: var(--accent-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#burning-blood .detail-screen-info-section {
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+#burning-blood .detail-screen-image-section {
+    background-color: #40120f;
+    border: 1px solid var(--divider-color);
+    border-radius: 18px;
+    box-sizing: border-box;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#burning-blood .detail-screen-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+#burning-blood .detail-screen-text-section {
+    text-align: center;
+    margin-top: 45px;
+}
+
+#burning-blood .detail-screen-title {
+    color: var(--heading-text-color);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#burning-blood .detail-screen-type {
+    color: var(--accent-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0 0 35px;
+}
+
+#burning-blood .detail-screen-heading {
+    color: var(--heading-text-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#burning-blood .detail-screen-effect {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 50px;
+}
+
+#burning-blood .detail-screen-description {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 50px;
+}
+
+#burning-blood .detail-screen-back-link {
+    display: inline-block;
+    background-color: #261714;
+    color: var(--heading-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 60px;
+    border: 2px solid var(--accent-text-color);
+    border-radius: 8px;
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1001px) {
+    #burning-blood .detail-screen-section {
+        padding: 70px 40px;
+    }
+
+    #burning-blood .detail-screen-subheading {
+        text-align: left;
+    }
+
+    #burning-blood .detail-screen-info-section {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        margin-top: 70px;
+    }
+
+    #burning-blood .detail-screen-image-section {
+        flex: 1;
+        height: 450px;
+    }
+
+    #burning-blood .detail-screen-text-section {
+        flex: 1;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #burning-blood .detail-screen-title {
+        font-size: 50px;
+    }
+
+    #burning-blood .detail-screen-effect {
+        font-size: 24px;
+    }
+}
