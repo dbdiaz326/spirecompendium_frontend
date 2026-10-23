@@ -1,13 +1,46 @@
 {
   "files": {
-    "main.css": "/spirecompendium_frontend/static/css/main.3817f826.css",
-    "main.js": "/spirecompendium_frontend/static/js/main.4b88036e.js",
+    "main.css": "/spirecompendium_frontend/static/css/main.42817843.css",
+    "main.js": "/spirecompendium_frontend/static/js/main.e5f1f0ef.js",
+    "static/media/hero-image.png": "/spirecompendium_frontend/static/media/hero-image.f365be6a8ca990c45f5a.png",
+    "static/media/defect-hero-image.png": "/spirecompendium_frontend/static/media/defect-hero-image.c1a164fc7ac677c54070.png",
+    "static/media/watcher-hero-image.png": "/spirecompendium_frontend/static/media/watcher-hero-image.177a496583b6394eced1.png",
+    "static/media/silent-hero-image.png": "/spirecompendium_frontend/static/media/silent-hero-image.009eba9cb6f011a43ab6.png",
+    "static/media/ironclad-hero-image.png": "/spirecompendium_frontend/static/media/ironclad-hero-image.5087c25beb13c5b03948.png",
+    "static/media/defect-image.png": "/spirecompendium_frontend/static/media/defect-image.a6e5276081ee927412a3.png",
+    "static/media/watcher-image.png": "/spirecompendium_frontend/static/media/watcher-image.201be8ce755ffbb5052b.png",
+    "static/media/eruption-image.png": "/spirecompendium_frontend/static/media/eruption-image.705f4436a24240dc7e53.png",
+    "static/media/vigilance-image.png": "/spirecompendium_frontend/static/media/vigilance-image.f24d3152c0403a82f3c8.png",
+    "static/media/survivor-image.png": "/spirecompendium_frontend/static/media/survivor-image.1565a34474f1d8023f04.png",
+    "static/media/dualcast-image.png": "/spirecompendium_frontend/static/media/dualcast-image.e9cc460d83f6539dbbcb.png",
+    "static/media/silent-defend-image.png": "/spirecompendium_frontend/static/media/silent-defend-image.69ae66b1da57cf9a2149.png",
+    "static/media/ironclad-defend-image.png": "/spirecompendium_frontend/static/media/ironclad-defend-image.384e3d56be382d28ab0d.png",
+    "static/media/watcher-defend-image.png": "/spirecompendium_frontend/static/media/watcher-defend-image.5b57904b01fff44ba28d.png",
+    "static/media/bash-image.png": "/spirecompendium_frontend/static/media/bash-image.380e6357fb3eb7a13b0e.png",
+    "static/media/silent-image.png": "/spirecompendium_frontend/static/media/silent-image.e8e75e4f52a9328fa85a.png",
+    "static/media/defect-strike-image.png": "/spirecompendium_frontend/static/media/defect-strike-image.b756856ead91064ea9a4.png",
+    "static/media/defect-defend-image.png": "/spirecompendium_frontend/static/media/defect-defend-image.3eb9f03ed02b28e67eef.png",
+    "static/media/neutralize-image.png": "/spirecompendium_frontend/static/media/neutralize-image.6712ebb039205fe70fbd.png",
+    "static/media/watcher-strike-image.png": "/spirecompendium_frontend/static/media/watcher-strike-image.89641eac8b97cb8138c7.png",
+    "static/media/ironclad-strike-image.png": "/spirecompendium_frontend/static/media/ironclad-strike-image.fd44dd73db96a67d50a4.png",
+    "static/media/ironclad-image.png": "/spirecompendium_frontend/static/media/ironclad-image.612b8fdb06197841111d.png",
+    "static/media/zap-image.png": "/spirecompendium_frontend/static/media/zap-image.413084e6c675059dc3d8.png",
+    "static/media/silent-strike-image.png": "/spirecompendium_frontend/static/media/silent-strike-image.7d7e003c1377c8b042e1.png",
+    "static/media/duality-image.png": "/spirecompendium_frontend/static/media/duality-image.c13cc4435d5186452983.png",
+    "static/media/frozen-core-image.png": "/spirecompendium_frontend/static/media/frozen-core-image.6b465ddd0f078cc6a147.png",
+    "static/media/ring-of-the-serpent-image.png": "/spirecompendium_frontend/static/media/ring-of-the-serpent-image.21a4f012cf28284dc7cc.png",
+    "static/media/golden-eye-image.png": "/spirecompendium_frontend/static/media/golden-eye-image.de57bbc6099cd3c98535.png",
+    "static/media/wrist-blade-image.png": "/spirecompendium_frontend/static/media/wrist-blade-image.99c419042da60c7bc7a0.png",
+    "static/media/violet-lotus-image.png": "/spirecompendium_frontend/static/media/violet-lotus-image.93e7fb1198bab138c28e.png",
+    "static/media/red-skull-image.png": "/spirecompendium_frontend/static/media/red-skull-image.b9ffc71ac8a62e6d8caa.png",
+    "static/media/data-disk-image.png": "/spirecompendium_frontend/static/media/data-disk-image.8b3eb0eee9d9827ca6aa.png",
+    "static/media/damaru-image.png": "/spirecompendium_frontend/static/media/damaru-image.b4165f19c343da03db5b.png",
     "index.html": "/spirecompendium_frontend/index.html",
-    "main.3817f826.css.map": "/spirecompendium_frontend/static/css/main.3817f826.css.map",
-    "main.4b88036e.js.map": "/spirecompendium_frontend/static/js/main.4b88036e.js.map"
+    "main.42817843.css.map": "/spirecompendium_frontend/static/css/main.42817843.css.map",
+    "main.e5f1f0ef.js.map": "/spirecompendium_frontend/static/js/main.e5f1f0ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.3817f826.css",
-    "static/js/main.4b88036e.js"
+    "static/css/main.42817843.css",
+    "static/js/main.e5f1f0ef.js"
   ]
 }
