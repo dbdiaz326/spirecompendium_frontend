@@ -1,0 +1,211 @@
+#watcher {
+    --heading-text-color: #faebff;
+    --text-color: #e0b8ff;
+    --accent-text-color: #f28feb;
+    --relic-card-border: #eb8f40;
+    background-color: #170921;
+}
+
+#watcher-hero {
+    border: 4px solid var(--divider-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(23, 9, 33, 0.8),
+        rgba(23, 9, 33, 0.5)
+    ), url("./images/watcher-hero-image.png");
+    background-size: cover;
+    background-position: 60% center;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#watcher .character-screen-hero-title {
+    color: var(--heading-text-color);
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+}
+
+#watcher .character-screen-hero-description {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 15px 0 0;
+}
+
+#watcher .character-screen-starting-health,
+#watcher .character-screen-starting-relic {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#watcher-relic-section {
+    background-color: #170921;
+    border: 4px solid var(--divider-color);
+    padding: 50px 20px;
+}
+
+#watcher .character-screen-relic-heading {
+    color: var(--heading-text-color);
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#watcher .character-screen-relic-subheading {
+    color: var(--accent-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 980px;
+    margin: 10px auto 25px;
+}
+
+#watcher .character-screen-relic-card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#watcher .character-screen-relic-card-section > * {
+    width: 100%;
+}
+
+#watcher .character-screen-relic-card {
+    background-color: #33124d;
+}
+
+#watcher .character-screen-relic-card-link {
+    text-decoration: none;
+}
+
+#watcher .character-screen-relic-card-link .character-screen-relic-card {
+    height: 100%;
+}
+
+#watcher-deck-section {
+    background-color: #2b0e40;
+    border: 4px solid var(--divider-color);
+    padding: 50px 20px;
+}
+
+#watcher .character-screen-deck-heading {
+    color: var(--heading-text-color);
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#watcher .character-screen-deck-description {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    max-width: 980px;
+    margin: 10px auto 25px;
+}
+
+#watcher .character-screen-deck-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#watcher .deck-card {
+    margin: 0;
+}
+
+/* Medium Screens */
+@media screen and (min-width: 600px) {
+    #watcher .character-screen-relic-card-section > * {
+        width: 220px;
+    }
+
+    #watcher .character-screen-deck-card-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1001px) {
+    #watcher-hero {
+        min-height: 570px;
+        background-image: linear-gradient(
+            to right,
+            rgba(23, 9, 33, 0.85) 0%,
+            rgba(23, 9, 33, 0.85) 44%,
+            transparent 44%
+        ), url("./images/watcher-hero-image.png");
+        background-position: center;
+    }
+
+    #watcher .character-screen-hero-title {
+        font-size: 90px;
+        text-align: left;
+        padding: 0 60px;
+    }
+
+    #watcher .character-screen-hero-description {
+        width: 485px;
+        font-size: 24px;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    #watcher .character-screen-starting-health,
+    #watcher .character-screen-starting-relic {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 60px;
+    }
+
+    #watcher-relic-section {
+        padding: 50px 30px 90px;
+    }
+
+    #watcher .character-screen-relic-heading {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    #watcher .character-screen-relic-subheading {
+        text-align: left;
+    }
+
+    #watcher-deck-section {
+        padding: 70px 30px;
+    }
+
+    #watcher .character-screen-deck-heading {
+        font-size: 42px;
+        text-align: left;
+    }
+
+    #watcher .character-screen-deck-description {
+        font-size: 20px;
+        text-align: left;
+    }
+}

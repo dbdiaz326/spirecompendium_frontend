@@ -13,6 +13,9 @@ import SilentStrike from "./pages/silentstrike/SilentStrike";
 import Defect from "./pages/defect/Defect";
 import CrackedCore from "./pages/crackedcore/CrackedCore";
 import DefectStrike from "./pages/defectstrike/DefectStrike";
+import Watcher from "./pages/watcher/Watcher";
+import PureWater from "./pages/purewater/PureWater";
+import WatcherStrike from "./pages/watcherstrike/WatcherStrike";
 
 const App = () => {
     return (
@@ -35,6 +38,12 @@ const App = () => {
                     <Route path="defect" element={<Defect />} />
                     <Route path="cracked-core" element={<CrackedCore />} />
                     <Route path="defect-strike" element={<DefectStrike />} />
+                </Route>
+
+                <Route element={<Layout theme="watcher-theme" />}>
+                    <Route path="watcher" element={<Watcher />} />
+                    <Route path="pure-water" element={<PureWater />} />
+                    <Route path="watcher-strike" element={<WatcherStrike />} />
                 </Route>
             </Routes>
         </HashRouter>

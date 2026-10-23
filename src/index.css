@@ -68,3 +68,20 @@ img {
 .defect-theme #main-footer {
     background-color: #0e213b;
 }
+
+/* Watcher Theme */
+.watcher-theme {
+    --heading-text-color: #faebff;
+    --text-color: #e0b8ff;
+    --accent-text-color: #f28feb;
+    --nav-text-color: #e0b8ff;
+    background-color: #170921;
+}
+
+.watcher-theme .main-header {
+    background-color: #2b0b40;
+}
+
+.watcher-theme #main-footer {
+    background-color: #2b0e40;
+}

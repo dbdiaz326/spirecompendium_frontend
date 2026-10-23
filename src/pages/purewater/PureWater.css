@@ -1,0 +1,136 @@
+#pure-water {
+    --heading-text-color: #faebff;
+    --text-color: #e0b8ff;
+    --accent-text-color: #f28feb;
+    background-color: #170921;
+}
+
+#pure-water .detail-screen-section {
+    border: 4px solid var(--divider-color);
+    padding: 50px 20px;
+}
+
+#pure-water .detail-screen-subheading {
+    color: var(--accent-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#pure-water .detail-screen-info-section {
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+#pure-water .detail-screen-image-section {
+    background-color: #33124d;
+    border: 1px solid var(--divider-color);
+    border-radius: 18px;
+    box-sizing: border-box;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pure-water .detail-screen-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+#pure-water .detail-screen-text-section {
+    text-align: center;
+    margin-top: 45px;
+}
+
+#pure-water .detail-screen-title {
+    color: var(--heading-text-color);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#pure-water .detail-screen-type {
+    color: var(--accent-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0 0 35px;
+}
+
+#pure-water .detail-screen-heading {
+    color: var(--heading-text-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+#pure-water .detail-screen-effect {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 50px;
+}
+
+#pure-water .detail-screen-description {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 50px;
+}
+
+#pure-water .detail-screen-back-link {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    background-color: #2b0e40;
+    color: var(--heading-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 60px;
+    border: 2px solid var(--accent-text-color);
+    border-radius: 8px;
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1001px) {
+    #pure-water .detail-screen-section {
+        padding: 70px 40px;
+    }
+
+    #pure-water .detail-screen-subheading {
+        text-align: left;
+    }
+
+    #pure-water .detail-screen-info-section {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        margin-top: 70px;
+    }
+
+    #pure-water .detail-screen-image-section {
+        flex: 1;
+        height: 450px;
+    }
+
+    #pure-water .detail-screen-text-section {
+        flex: 1;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #pure-water .detail-screen-title {
+        font-size: 50px;
+    }
+
+    #pure-water .detail-screen-effect {
+        font-size: 24px;
+    }
+}
