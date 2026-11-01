@@ -1,5 +1,6 @@
 import "./Contact.css";
 import {useState} from "react";
+import toast, {Toaster} from "react-hot-toast";
 
 const Contact = () => {
     const [result, setResult] = useState("");
@@ -20,16 +21,19 @@ const Contact = () => {
 
         if (data.success) {
             setResult("Email Sent");
+            toast.success("Message sent!");
             setTimeout(() => {setResult("");}, 3000);
 
             event.target.reset();
         } else {
             setResult("Error");
+            toast.error("Message could not be sent.");
         }
     };
 
     return (
         <div id="contact" className="page">
+            <Toaster />
             <section id="contact-section">
                 <h1 id="contact-heading">Contact Me</h1>
                 <p id="contact-description">
