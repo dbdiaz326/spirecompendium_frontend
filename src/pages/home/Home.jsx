@@ -7,6 +7,7 @@ import ironclad from "./images/ironclad-image.png";
 import silent from "./images/silent-image.png";
 import defect from "./images/defect-image.png";
 import watcher from "./images/watcher-image.png";
+import Video from "../../components/video/Video";
 
 const Home = () => {
     const [heroChoice, setHeroChoice] = useState("");
@@ -108,6 +109,7 @@ const Home = () => {
                     />
                 </section>
             </section>
+            <Video />
         </div>
     );
 };

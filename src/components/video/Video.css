@@ -1,0 +1,40 @@
+#video-section {
+    border: 4px solid var(--divider-color);
+    padding: 50px 20px;
+}
+
+#video-heading {
+    color: var(--heading-text-color);
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+#video-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+#video-container iframe {
+    display: block;
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+/* Larger Screens */
+@media screen and (min-width: 1001px) {
+    #video-section {
+        padding: 80px 30px;
+    }
+
+    #video-heading {
+        font-size: 40px;
+    }
+
+    #video-container iframe {
+        height: 500px;
+    }
+}
