@@ -16,6 +16,25 @@
     text-transform: uppercase;
 }
 
+.toggle-nav {
+    display: block;
+    margin: auto;
+    padding: 5px 15px;
+    background: none;
+    border: none;
+    color: var(--nav-text-color);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.main-header .hide-small {
+    display: none;
+}
+
+#main-footer .toggle-nav {
+    display: none;
+}
+
 @media screen and (min-width: 1001px) {
     .main-nav {
         margin-left: auto;
@@ -23,5 +42,13 @@
 
     .main-nav ul {
         display: flex;
+    }
+
+    .main-header .hide-small {
+        display: flex;
+    }
+
+    .toggle-nav {
+        display: none;
     }
 }
