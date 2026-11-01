@@ -1,4 +1,6 @@
 import "./Home.css";
+import {useState} from "react";
+import {useNavigate} from "react-router-dom";
 import HeroCard from "../../components/herocard/HeroCard";
 import StepCard from "../../components/stepcard/StepCard";
 import ironclad from "./images/ironclad-image.png";
@@ -7,6 +9,26 @@ import defect from "./images/defect-image.png";
 import watcher from "./images/watcher-image.png";
 
 const Home = () => {
+    const [heroChoice, setHeroChoice] = useState("");
+    const [choosing, setChoosing] = useState(false);
+    const navigate = useNavigate();
+
+    const chooseHero = () => {
+        const heroes = ["Ironclad", "Silent", "Defect", "Watcher"];
+        const heroPages = ["/ironclad", "/silent", "/defect", "/watcher"];
+
+        const heroNum = Math.floor(Math.random() * heroes.length);
+
+        setHeroChoice(`You got The ${heroes[heroNum]}!`);
+        setChoosing(true);
+
+        setTimeout(() => {
+            navigate(heroPages[heroNum]);
+            setHeroChoice("");
+            setChoosing(false);
+        }, 1200);
+    };
+
     return (
         <div id="home" className="page">
             <section id="hero-section">
@@ -56,8 +78,14 @@ const Home = () => {
                 <p id="choose-hero-text">
                     Not sure who to play? Let fate decide.
                 </p>
-                <button id="btn-choose-hero">Choose for Me</button>
-                <p id="hero-choice"></p>
+                <button
+                    id="btn-choose-hero"
+                    onClick={chooseHero}
+                    disabled={choosing}
+                >
+                    Choose for Me
+                </button>
+                <p id="hero-choice">{heroChoice}</p>
             </section>
 
             <section id="steps-section">

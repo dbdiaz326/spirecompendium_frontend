@@ -101,6 +101,10 @@
     margin: 0 auto;
 }
 
+#btn-choose-hero {
+    cursor: pointer;
+}
+
 /* Medium Screens */
 @media screen and (min-width: 600px) {
     #hero-card-section {
