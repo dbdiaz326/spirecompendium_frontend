@@ -71,6 +71,10 @@
     padding: 12px 20px;
 }
 
+#contact-form button {
+    cursor: pointer;
+}
+
 /* Smaller Screens */
 @media screen and (max-width: 1000px) {
     #contact-section {
