@@ -1,18 +1,26 @@
 import "./Home.css";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
+import axios from "axios";
 import HeroCard from "../../components/herocard/HeroCard";
 import StepCard from "../../components/stepcard/StepCard";
-import ironclad from "./images/ironclad-image.png";
-import silent from "./images/silent-image.png";
-import defect from "./images/defect-image.png";
-import watcher from "./images/watcher-image.png";
 import Video from "../../components/video/Video";
 
 const Home = () => {
+    const [heroes, setHeroes] = useState([]);
     const [heroChoice, setHeroChoice] = useState("");
     const [choosing, setChoosing] = useState(false);
     const navigate = useNavigate();
+
+    //after the page has loaded
+    useEffect(()=>{
+        const loadHeroes = async()=>{
+            const response = await axios.get("https://spirecompendium-backend.onrender.com/api/heroes");
+            setHeroes(response.data);
+        };
+
+        loadHeroes();
+    },[]);
 
     const chooseHero = () => {
         const heroes = ["Ironclad", "Silent", "Defect", "Watcher"];
@@ -43,38 +51,17 @@ const Home = () => {
             <section id="choose-section">
                 <h1 id="choose-heading">Choose Your Hero</h1>
                 <section id="hero-card-section">
-                    <HeroCard
-                        title="The Ironclad"
-                        description="Uses strength and can heal by taking damage"
-                        emoji="⚔️"
-                        color="ironclad-color"
-                        link="/ironclad"
-                        src={ironclad}
-                    />
-                    <HeroCard
-                        title="The Silent"
-                        description="Uses poison and many small attacks"
-                        emoji="🧪"
-                        color="silent-color"
-                        link="/silent"
-                        src={silent}
-                    />
-                    <HeroCard
-                        title="The Defect"
-                        description="Uses orbs for damage and defense"
-                        emoji="⚡"
-                        color="defect-color"
-                        link="/defect"
-                        src={defect}
-                    />
-                    <HeroCard
-                        title="The Watcher"
-                        description="Switches stances to deal more damage"
-                        emoji="☯️"
-                        color="watcher-color"
-                        link="/watcher"
-                        src={watcher}
-                    />
+                    {heroes.map((hero)=>(
+                        <HeroCard
+                            key={hero._id}
+                            title={hero.name}
+                            description={hero.description}
+                            emoji={hero.emoji}
+                            color={hero.color}
+                            link={hero.link}
+                            src={`https://spirecompendium-backend.onrender.com/images/${hero.main_image}`}
+                        />
+                    ))}
                 </section>
                 <p id="choose-hero-text">
                     Not sure who to play? Let fate decide.
