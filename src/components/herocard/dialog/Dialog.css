@@ -1,0 +1,44 @@
+#hero-dialog {
+    display: block;
+}
+
+#hero-dialog .w3-modal-content {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+    margin-bottom: 40px;
+    background-color: var(--hero-card-background);
+    color: var(--text-color);
+    border: 1px solid var(--divider-color);
+    border-radius: 18px;
+}
+
+#hero-dialog .dialog-close {
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+#hero-dialog h2 {
+    color: var(--heading-text-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#hero-dialog img {
+    display: block;
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#hero-dialog p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#hero-dialog .hero-dialog-emoji {
+    font-size: 30px;
+}

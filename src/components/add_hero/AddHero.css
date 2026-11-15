@@ -1,0 +1,77 @@
+#add-hero-dialog {
+    display: block;
+}
+
+#add-hero-dialog .w3-modal-content {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+    margin-bottom: 40px;
+    background-color: var(--hero-card-background);
+    border: 1px solid var(--divider-color);
+    border-radius: 18px;
+    color: var(--text-color);
+}
+
+#add-hero-dialog h2 {
+    color: var(--heading-text-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#add-hero-dialog #dialog-close {
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+#add-hero-dialog label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#add-hero-dialog input,
+#add-hero-dialog textarea,
+#add-hero-dialog select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--heading-text-color);
+    border: 1px solid #8b573d;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#add-hero-dialog textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#add-hero-dialog input[type="file"] {
+    padding: 8px;
+}
+
+#add-hero-dialog #img-prev {
+    display: block;
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+#add-hero-dialog button {
+    padding: 12px 25px;
+    background-color: var(--accent-text-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add-hero-dialog #status-message {
+    color: var(--heading-text-color);
+    text-align: center;
+}

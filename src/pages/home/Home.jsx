@@ -2,7 +2,9 @@ import "./Home.css";
 import {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
+import { API_BASE_URL } from "../../config";
 import HeroCard from "../../components/herocard/HeroCard";
+import AddHero from "../../components/add_hero/AddHero";
 import StepCard from "../../components/stepcard/StepCard";
 import Video from "../../components/video/Video";
 
@@ -10,12 +12,25 @@ const Home = () => {
     const [heroes, setHeroes] = useState([]);
     const [heroChoice, setHeroChoice] = useState("");
     const [choosing, setChoosing] = useState(false);
+    const [showAddDialog, setShowAddDialog] = useState(false);
     const navigate = useNavigate();
+
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    };
+
+    const closeAddDialog = () => {
+        setShowAddDialog(false);
+    };
+
+    const addHeroToList = (hero) => {
+        setHeroes((heroes)=>[...heroes,hero]);
+    };
 
     //after the page has loaded
     useEffect(()=>{
         const loadHeroes = async()=>{
-            const response = await axios.get("https://spirecompendium-backend.onrender.com/api/heroes");
+            const response = await axios.get(`${API_BASE_URL}/api/heroes`);
             setHeroes(response.data);
         };
 
@@ -50,6 +65,16 @@ const Home = () => {
 
             <section id="choose-section">
                 <h1 id="choose-heading">Choose Your Hero</h1>
+
+                <button id="btn-add-hero" onClick={openAddDialog}>
+                    Add Hero
+                </button>
+
+                {showAddDialog && <AddHero
+                    close_dialog={closeAddDialog}
+                    add_hero_to_list={addHeroToList}
+                />}
+
                 <section id="hero-card-section">
                     {heroes.map((hero)=>(
                         <HeroCard
@@ -59,10 +84,11 @@ const Home = () => {
                             emoji={hero.emoji}
                             color={hero.color}
                             link={hero.link}
-                            src={`https://spirecompendium-backend.onrender.com/images/${hero.main_image}`}
+                            src={`${API_BASE_URL}/images/${hero.main_image}`}
                         />
                     ))}
                 </section>
+
                 <p id="choose-hero-text">
                     Not sure who to play? Let fate decide.
                 </p>
