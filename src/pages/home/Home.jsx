@@ -67,7 +67,7 @@ const Home = () => {
                 <h1 id="choose-heading">Choose Your Hero</h1>
 
                 <button id="btn-add-hero" onClick={openAddDialog}>
-                    Add Hero
+                    Create Your Own Concept Character
                 </button>
 
                 {showAddDialog && <AddHero
